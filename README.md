@@ -336,7 +336,7 @@ text elements you want to use EXCEPT an `h2` element.
 ### Wrapping up
 
 Make sure that you pass all the tests by running `npm test`. Each test is
-weighted individually. To see your score, run `npm run score`.
+weighted individually. To see your score, run `npm run test-with-json`.
 
 ## Submitting your assessment
 
