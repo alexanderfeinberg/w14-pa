@@ -19,22 +19,42 @@ The tests for each step have point values assigned to them which means you can
 get partial credit for partially finishing a step and getting _some_ of the
 tests to pass.
 
-If you have errors or warnings in your console (other than those beyond your
-control such as cross-origin cookie errors) or erroneously badly formatted code,
-up to five points may be deducted from your score.
-
 You can see your score (without the checks for errors or warnings in your
-console and without the checks for erroneously badly formatted code) at any time
+console and without the checks for erroneously or badly formatted code) at any time
 by running `npm run test-with-json`.
 
 ## Resources
 
 You can use any of the following resources during this assessment:
 
-- [React Router documentation](https://reacttraining.com/react-router/web)
+- [React Router documentation](https://v5.reactrouter.com/)
 - [React documentation](https://reactjs.org/docs/getting-started.html)
+- [React beta docs](https://beta.reactjs.org/)
 - [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web)
-- Any of your previous projects or assessments
+- [React Learning
+  Objectives](https://github.com/jdrichardsappacad/week14-react-learning-objectives)
+- [React Hooks
+  Cheatsheet](https://gist.github.com/jamesurobertson/f87c68f5eb2839e3dee88279aca6054c)
+- MDN
+- A whiteboard or paper to work out problems/code, but they must be within
+  camera range
+- Previously written code you wrote yourself
+  - Except for code from previous assessment submissions
+- Comments within code
+  - If there are comments in your code about your specific code and about what
+    your code is doing, that is appropriate. If your comments are about concepts
+    and based on the readings, then that counts as notes. Those would not be
+    appropriate.
+
+You may NOT use the following resources:
+
+- Slack
+- Discord
+- Google / other search engines
+- StackOverflow, etc.
+- GeeksForGeeks, or any tutorial site
+- Notes
+- Code from previous assessment submissions
 
 ## Tests for your assessment
 
