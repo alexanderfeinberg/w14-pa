@@ -7,7 +7,7 @@ This is your React practice assessment.
 Clone the starter from [here][react-assessment].
 
 Make sure you are using Node version 16! Run `nvm install 16` to install the
-latest Node version 16. Then run `nvm alias default 16.14.0` to set it as your
+latest Node version 16. Then run `nvm alias default 16` to set it as your 
 default Node version. Finally, run `nvm use 16` to use Node version 16.
 
 Run `npm install` to install dependencies.
