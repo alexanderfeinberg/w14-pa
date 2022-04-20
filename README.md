@@ -364,10 +364,13 @@ weighted individually. To see your score, run `npm run test-with-json`.
 
 ## Submitting your assessment
 
-1. Delete the **node_modules** directory from the directory that contains your
+1. Re-run all unit tests and fix any syntax errors that are crashing the tests. If
+the unit tests crash, or do not run, you will receive a zero for the coding
+portion of the assessment
+2. Delete the **node_modules** directory from the directory that contains your
    assessment code.
-2. Delete the **test/score.json** file, if you have one.
-3. Zip up the directory that contains your assessment code.
-4. Submit it.
+3. Delete the **test/score.json** file, if you have one.
+4. Zip up the directory that contains your assessment code.
+5. Submit it.
 
 [react-assessment]: https://github.com/appacademy/assessment-for-week-14-practice-react
