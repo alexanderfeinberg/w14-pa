@@ -1,18 +1,18 @@
-import { createContext, useState } from 'react';
+import { createContext, useState } from "react";
 
 export const FavFruitContext = createContext();
 
 export default function FavFruitProvider(props) {
-  const [favFruitId, setFavFruitId] = useState('1');
+  const [favFruitId, setFavFruitId] = useState("4");
 
   return (
     <FavFruitContext.Provider
       value={{
         favFruitId,
-        setFavFruitId
+        setFavFruitId,
       }}
     >
       {props.children}
     </FavFruitContext.Provider>
-  )
+  );
 }

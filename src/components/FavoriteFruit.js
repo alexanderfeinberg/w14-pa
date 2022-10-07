@@ -2,11 +2,16 @@ import { NavLink } from "react-router-dom";
 import { useContext } from "react";
 import { FavFruitContext } from "../context/FavFruitContext";
 
-const FavoriteFruit = ({ fruits }) => {
-  const { favFruitId, setFavFruitId } = useContext(FavFruitContext);
+export const findFruit = (fruits, favFruitId) => {
   let [name] = fruits.filter((fruit) => fruit.id === favFruitId);
   let { name: fruitName } = name;
-  console.log(name);
+  return fruitName;
+};
+
+const FavoriteFruit = ({ fruits }) => {
+  const { favFruitId, setFavFruitId } = useContext(FavFruitContext);
+  let fruitName = findFruit(fruits, favFruitId);
+
   return (
     <div className="fav-fruit">
       <h2>Favorite Fruit</h2>
