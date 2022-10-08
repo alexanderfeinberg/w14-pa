@@ -12,24 +12,26 @@ function App() {
     <div>
       <Navigation />
       <Switch>
-        <Route exact path="/" render={() => <FruitsIndex fruits={fruits} />} />
-        <Route
-          path="/fruits/new"
-          render={() => <FruitForm fruits={fruits} />}
-        />
-        <Route
-          path="/fav-fruit"
-          render={() => <FavoriteFruit fruits={fruits} />}
-        />
+        <Route exact path="/">
+          <FruitsIndex fruits={fruits} />
+        </Route>
+        <Route exact path="/fruits/new">
+          <FruitForm fruits={fruits} />
+        </Route>
+        <Route path="/fav-fruit">
+          <FavoriteFruit fruits={fruits} />
+        </Route>
 
-        <Route
-          path="/set-fav-fruit"
-          render={() => <SetFavoriteFruit fruits={fruits} />}
-        />
+        <Route path="/set-fav-fruit">
+          <SetFavoriteFruit fruits={fruits} />
+        </Route>
         <Route
           path={`/fruits/:fruitId`}
-          render={() => <FruitShow fruits={fruits} />}
-        />
+          // component={FruitShow}
+        >
+          <FruitShow fruits={fruits} />
+        </Route>
+
         <Route render={() => <div>Page Not Found</div>} />
       </Switch>
     </div>

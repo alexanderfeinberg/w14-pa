@@ -1,7 +1,6 @@
 import { useParams } from "react-router-dom";
 
 const findFruit = (id, fruits) => {
-  id = Number(id);
   for (let fruit of fruits) {
     if (fruit.id === id) {
       return fruit;
@@ -15,11 +14,11 @@ function FruitShow({ fruits }) {
   let fruit = findFruit(fruitId, fruits);
 
   return (
-    <div class="fruit-show">
+    <div className="fruit-show">
       <h2>{fruit.name}</h2>
-      <p>{fruit.color}</p>
-      <p>{fruit.sweetness}</p>
-      <p>{fruit.seeds}</p>
+      <p>Color: {fruit.color}</p>
+      <p>Sweetness: {fruit.sweetness}</p>
+      <p>Seeds: {fruit.seeds}</p>
     </div>
   );
 }
