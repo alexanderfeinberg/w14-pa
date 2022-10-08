@@ -5,10 +5,12 @@ import { Route, Switch } from "react-router-dom";
 import SetFavoriteFruit from "./components/SetFavoriteFruit";
 import FavoriteFruit from "./components/FavoriteFruit";
 import FruitShow from "./components/FruitShow";
+import Navigation from "./components/Navigation";
 
 function App() {
   return (
     <div>
+      <Navigation />
       <Switch>
         <Route exact path="/" render={() => <FruitsIndex fruits={fruits} />} />
         <Route
